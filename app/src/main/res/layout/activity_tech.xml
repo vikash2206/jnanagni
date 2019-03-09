@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TechActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            android:fitsSystemWindows="true">
+
+            <ImageView
+                android:id="@+id/img"
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/download2"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"/>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:title="recent_news"
+                app:layout_collapseMode="pin"/>
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="365dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event-Description"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="12dp"
+                    android:textSize="20sp"
+                    android:padding="12dp"/>
+                <TextView
+                    android:id="@+id/txtsummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jfjjjhfhhfhhfhfh"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="17sp"
+                    android:padding="10dp"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txttask"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="40dp"
+                        android:padding="8dp"
+                        android:text="jfjjjhfhhfhhfhfh"
+                        android:textColor="@color/colorPrimary"
+
+                        android:textSize="17sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:padding="8dp"
+                        android:text="Event-Task"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event-Judgement-criteria"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/txtjudge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jfjjjhfhhfhhfhfh"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="17sp"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event-Co-Ordinators"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/txtcord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="jfjjjhfhhfhhfhfh"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="italic"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="17sp"
+                    android:padding="10dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="80dp"
+                    android:text="Register/Unregister"
+
+                    android:textColor="@color/Accent"
+                    android:paddingRight="70dp"
+                    android:paddingLeft="70dp"
+                  android:layout_marginLeft="40dp"
+                    android:textSize="16sp"
+
+                    android:textAllCaps="false"/>
+
+
+            </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:pressedTranslationZ="12dp"
+
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_action_fav"
+        app:elevation="6dp"/>
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coverflow">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FrontActivity"></activity>
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".Cultural.CulturalActivity" />
+        <activity android:name=".SponsorsActivity" />
+        <activity android:name=".Register.ForgotActivity" />
+        <activity android:name=".Register.SignupActivity" />
+        <activity android:name=".EventDetail1.EventActivity" />
+        <activity android:name=".Register.LoginActivity" />
+        <activity android:name=".About.AboutActivity" />
+        <activity
+            android:name=".Contact.ContactActivity"
+            android:theme="@style/MyMaterialTheme.Base" />
+        <activity android:name=".MegaEvent.MegaActivity" />
+        <activity android:name=".Sport.SportActivity" />
+        <activity android:name=".Game.GameActivity" />
+        <activity android:name=".NonTech.NonTechActivity" />
+        <activity
+            android:name=".TechActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Technical.TechnicalActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
