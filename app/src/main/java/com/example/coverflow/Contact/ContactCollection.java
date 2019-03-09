@@ -23,7 +23,7 @@ public class ContactCollection {
          s=new Contact();
         s.setName("RAMAKANT SHAKYA");
         s.setGmail("ramakant0722@gmail.com");
-        s.setDevelop("APP DEVELOPER");
+        s.setDevelop("FrontEnd APP DEVELOPER");
         s.setImage(R.drawable.pubg3);
         events.add(s);
 
