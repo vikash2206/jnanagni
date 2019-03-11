@@ -4,9 +4,13 @@ package com.example.coverflow.Contact;
 import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.example.coverflow.EventDetail1.ItemClickListner;
@@ -19,6 +23,9 @@ class ContactViewHolder extends RecyclerView.ViewHolder implements View.OnClickL
     public TextView txtName;
     public   TextView txtGmail;
     public   TextView txtDevelop;
+    public ImageButton call;
+
+
     private ItemClickListner itemClickListner;
 
     public ContactViewHolder(@NonNull View itemView) {
@@ -28,6 +35,7 @@ class ContactViewHolder extends RecyclerView.ViewHolder implements View.OnClickL
         txtGmail = itemView.findViewById(R.id.textView2);
         txtDevelop = itemView.findViewById(R.id.textView3);
         ImgIcon = itemView.findViewById(R.id.circleView);
+call=itemView.findViewById(R.id.callbtn);
         itemView.setOnClickListener(this);
         itemView.setOnLongClickListener(this);
     }
@@ -75,12 +83,21 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactViewHolder> {
         holder.txtGmail.setText(s.getGmail());
         holder.txtDevelop.setText(s.getDevelop());
         holder.ImgIcon.setImageResource(s.getImage());
+holder.call.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        String number=    s.getCall();
+
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:"+number));
+        c.startActivity(callIntent);
+
+    }
+});
 
         holder.setItemClickListner(new ItemClickListner() {
             @Override
             public void onClick(View view, int position, boolean isLongClick) {
-
-
 
 
 
