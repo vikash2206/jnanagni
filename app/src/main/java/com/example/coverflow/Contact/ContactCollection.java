@@ -18,13 +18,15 @@ public class ContactCollection {
         s.setGmail("vikashkumar220698@gmail.com");
         s.setDevelop("HEAD APP DEVELOPER");
         s.setImage(R.drawable.v);
+        s.setCall("");
         events.add(s);
 
          s=new Contact();
         s.setName("RAMAKANT SHAKYA");
         s.setGmail("ramakant0722@gmail.com");
         s.setDevelop("FrontEnd APP DEVELOPER");
-        s.setImage(R.drawable.pubg3);
+        s.setImage(R.drawable.r);
+        s.setCall("8630500420");
         events.add(s);
 
 
@@ -33,6 +35,7 @@ public class ContactCollection {
         s.setGmail("");
         s.setDevelop("APP DEVELOPER");
         s.setImage(R.drawable.pubg3);
+        s.setCall("");
         events.add(s);
 
         s=new Contact();
@@ -41,6 +44,7 @@ public class ContactCollection {
         s.setGmail("");
         s.setDevelop("APP DEVELOPER");
         s.setImage(R.drawable.pubg3);
+        s.setCall("");
         events.add(s);
 
         return events;
